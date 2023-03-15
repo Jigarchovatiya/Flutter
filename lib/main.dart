@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-import 'grid_view_extent_screen.dart';
-
-import 'grid_view_screen.dart';
+import 'package:screens_app/screen_eight.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,9 +15,9 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
-        fontFamily: "gordita",
+        fontFamily: "lato",
       ),
-      home: const GridViewExtentScreen(),
+      home: const ScreenEight(),
     );
   }
 }
