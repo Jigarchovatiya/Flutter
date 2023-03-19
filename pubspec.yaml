@@ -63,6 +63,7 @@ flutter:
   assets:
     - assets/grid/
     - assets/eight/
+    - assets/shoes_screen/
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
@@ -105,6 +106,17 @@ flutter:
         - asset: assets/fonts/raleway/Raleway-Regular.ttf
         - asset: assets/fonts/raleway/Raleway-SemiBold.ttf
         - asset: assets/fonts/raleway/Raleway-Thin.ttf
+    - family: SofiaSans
+      fonts:
+        - asset: assets/fonts/SofiaSans/SofiaSans-Black.ttf
+        - asset: assets/fonts/SofiaSans/SofiaSans-Bold.ttf
+        - asset: assets/fonts/SofiaSans/SofiaSans-ExtraBold.ttf
+        - asset: assets/fonts/SofiaSans/SofiaSans-ExtraLight.ttf
+        - asset: assets/fonts/SofiaSans/SofiaSans-Light.ttf
+        - asset: assets/fonts/SofiaSans/SofiaSans-Medium.ttf
+        - asset: assets/fonts/SofiaSans/SofiaSans-Regular.ttf
+        - asset: assets/fonts/SofiaSans/SofiaSans-SemiBold.ttf
+        - asset: assets/fonts/SofiaSans/SofiaSans-Thin.ttf
     - family: roboto
       fonts:
         - asset: assets/fonts/roboto/Roboto-Black.ttf
