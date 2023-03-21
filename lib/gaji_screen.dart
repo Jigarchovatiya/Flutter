@@ -193,6 +193,7 @@ class _GajiScreenState extends State<GajiScreen> {
                       padding: const EdgeInsets.only(right: 10),
                       child: Container(
                         width: 270,
+                        padding: const EdgeInsets.only(right: 40, top: 20),
                         decoration: BoxDecoration(
                           border: Border.all(
                             width: 1,
@@ -222,7 +223,8 @@ class _GajiScreenState extends State<GajiScreen> {
                               )
                             : Column(
                                 children: [
-                                  Image.asset("assets/gaji_screen/white.png", width: 224),
+                                  const Align(alignment: Alignment.centerRight, child: Icon(Icons.more_vert, size: 25, color: Colors.white)),
+                                  Image.asset("assets/gaji_screen/white.png", height: 180),
                                   Padding(
                                     padding: const EdgeInsets.all(10),
                                     child: Column(
@@ -324,6 +326,7 @@ class _GajiScreenState extends State<GajiScreen> {
                     child: Padding(
                       padding: const EdgeInsets.only(right: 10),
                       child: Container(
+                        padding: const EdgeInsets.only(top: 20, right: 20),
                         width: 270,
                         decoration: BoxDecoration(
                           border: Border.all(
@@ -354,7 +357,8 @@ class _GajiScreenState extends State<GajiScreen> {
                               )
                             : Column(
                                 children: [
-                                  Image.asset("assets/gaji_screen/black.png", width: 224),
+                                  const Align(alignment: Alignment.centerRight, child: Icon(Icons.more_vert, size: 25, color: Colors.white)),
+                                  Image.asset("assets/gaji_screen/black.png", height: 180),
                                   Padding(
                                     padding: const EdgeInsets.all(10),
                                     child: Column(
@@ -373,8 +377,7 @@ class _GajiScreenState extends State<GajiScreen> {
                                         Row(
                                           children: [
                                             Container(
-                                              height: 38,
-                                              width: 100,
+                                              padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 6),
                                               decoration: BoxDecoration(
                                                 color: const Color(0x1ACCCCCC),
                                                 border: Border.all(
@@ -411,8 +414,7 @@ class _GajiScreenState extends State<GajiScreen> {
                                             ),
                                             const SizedBox(width: 10),
                                             Container(
-                                              height: 38,
-                                              width: 89,
+                                              padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 7),
                                               decoration: BoxDecoration(
                                                 color: const Color(0x1A7BBA3C),
                                                 border: Border.all(
@@ -469,7 +471,7 @@ class _GajiScreenState extends State<GajiScreen> {
               const SizedBox(height: 20),
               Image.asset(
                 "assets/gaji_screen/jordon_zoom.png",
-                width: 360,
+                height: 210,
               ),
               const SizedBox(height: 30),
               const Align(
@@ -518,6 +520,7 @@ class _GajiScreenState extends State<GajiScreen> {
                       padding: const EdgeInsets.only(right: 10),
                       child: Container(
                         width: 270,
+                        padding: const EdgeInsets.only(top: 20, right: 30),
                         decoration: BoxDecoration(
                           border: Border.all(
                             width: 1,
@@ -547,7 +550,8 @@ class _GajiScreenState extends State<GajiScreen> {
                               )
                             : Column(
                                 children: [
-                                  Image.asset("assets/gaji_screen/red.png", width: 224),
+                                  const Align(alignment: Alignment.centerRight, child: Icon(Icons.more_vert, size: 25, color: Colors.white)),
+                                  Image.asset("assets/gaji_screen/red.png", height: 180),
                                   Padding(
                                     padding: const EdgeInsets.all(10),
                                     child: Column(
@@ -566,8 +570,7 @@ class _GajiScreenState extends State<GajiScreen> {
                                         Row(
                                           children: [
                                             Container(
-                                              height: 38,
-                                              width: 50,
+                                              padding: const EdgeInsets.symmetric(horizontal: 7, vertical: 6),
                                               decoration: BoxDecoration(
                                                 color: const Color(0x1ACCCCCC),
                                                 border: Border.all(
@@ -576,22 +579,19 @@ class _GajiScreenState extends State<GajiScreen> {
                                                 ),
                                                 borderRadius: BorderRadius.circular(20),
                                               ),
-                                              child: const Center(
-                                                child: Text(
-                                                  "\$64",
-                                                  style: TextStyle(
-                                                    fontFamily: "SofiaSans",
-                                                    fontSize: 20,
-                                                    fontWeight: FontWeight.w400,
-                                                    color: Color(0xFFCCCCCC),
-                                                  ),
+                                              child: const Text(
+                                                "\$64",
+                                                style: TextStyle(
+                                                  fontFamily: "SofiaSans",
+                                                  fontSize: 20,
+                                                  fontWeight: FontWeight.w400,
+                                                  color: Color(0xFFCCCCCC),
                                                 ),
                                               ),
                                             ),
                                             const SizedBox(width: 10),
                                             Container(
-                                              height: 38,
-                                              width: 80,
+                                              padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 5),
                                               decoration: BoxDecoration(
                                                 color: const Color(0x1A02C0FC),
                                                 border: Border.all(
@@ -603,9 +603,9 @@ class _GajiScreenState extends State<GajiScreen> {
                                               child: Align(
                                                 alignment: Alignment.center,
                                                 child: Row(
-                                                  children: [
-                                                    const SizedBox(width: 10),
-                                                    const Text(
+                                                  children: const [
+                                                    SizedBox(width: 10),
+                                                    Text(
                                                       "New",
                                                       style: TextStyle(
                                                         fontFamily: "SofiaSans",
@@ -614,11 +614,8 @@ class _GajiScreenState extends State<GajiScreen> {
                                                         color: Color(0xFF02C0FC),
                                                       ),
                                                     ),
-                                                    const SizedBox(width: 5),
-                                                    Image.asset(
-                                                      "assets/gaji_screen/sparkles.png",
-                                                      width: 20,
-                                                    ),
+                                                    SizedBox(width: 5),
+                                                    Icon(Icons.auto_awesome, size: 24, color: Color(0xFF02C0FC)),
                                                   ],
                                                 ),
                                               ),
@@ -663,7 +660,7 @@ class _GajiScreenState extends State<GajiScreen> {
               ),
               const SizedBox(height: 30),
               SizedBox(
-                height: 55,
+                height: 50,
                 child: ListView.builder(
                   physics: const BouncingScrollPhysics(),
                   scrollDirection: Axis.horizontal,
@@ -671,7 +668,6 @@ class _GajiScreenState extends State<GajiScreen> {
                   itemBuilder: (context, index) => Padding(
                     padding: const EdgeInsets.symmetric(horizontal: 5),
                     child: Container(
-                      height: 54,
                       padding: const EdgeInsets.symmetric(horizontal: 20),
                       margin: const EdgeInsets.only(left: 15),
                       decoration: BoxDecoration(
@@ -696,7 +692,7 @@ class _GajiScreenState extends State<GajiScreen> {
               const SizedBox(height: 30),
               Image.asset(
                 "assets/gaji_screen/adept_bb_two.png",
-                width: 360,
+                height: 210,
               ),
               const SizedBox(height: 30),
               const Text(
@@ -710,8 +706,7 @@ class _GajiScreenState extends State<GajiScreen> {
               ),
               const SizedBox(height: 30),
               Container(
-                height: 54,
-                width: 195,
+                padding: const EdgeInsets.symmetric(horizontal: 50, vertical: 15),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(200),
                   border: Border.all(
@@ -719,15 +714,14 @@ class _GajiScreenState extends State<GajiScreen> {
                     width: 1,
                   ),
                 ),
-                child: const Center(
-                  child: Text(
-                    "Favorite",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 20,
-                      fontFamily: "SofiaSans",
-                      color: Color(0xFFCCCCCC),
-                    ),
+                child: const Text(
+                  textAlign: TextAlign.center,
+                  "Favorite",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 20,
+                    fontFamily: "SofiaSans",
+                    color: Color(0xFFCCCCCC),
                   ),
                 ),
               ),

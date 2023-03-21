@@ -396,7 +396,8 @@ class _ShoesScreenState extends State<ShoesScreen> {
                     child: Padding(
                       padding: const EdgeInsets.only(right: 10),
                       child: Container(
-                        width: 274,
+                        width: 275,
+                        padding: const EdgeInsets.only(right: 40, top: 20),
                         decoration: BoxDecoration(
                           border: Border.all(
                             width: 1,
@@ -426,7 +427,8 @@ class _ShoesScreenState extends State<ShoesScreen> {
                               )
                             : Column(
                                 children: [
-                                  Image.asset(shoeModelTwoList[index].image!, width: 224),
+                                  const Align(alignment: Alignment.centerRight, child: Icon(Icons.more_vert, size: 25, color: Colors.white)),
+                                  Image.asset(shoeModelTwoList[index].image!, height: 180),
                                   Padding(
                                     padding: const EdgeInsets.all(10),
                                     child: Column(
@@ -445,8 +447,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
                                         Row(
                                           children: [
                                             Container(
-                                              height: 38,
-                                              width: 62,
+                                              padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 6),
                                               decoration: BoxDecoration(
                                                 color: const Color(0x1ACCCCCC),
                                                 border: Border.all(
@@ -469,8 +470,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
                                             ),
                                             const SizedBox(width: 10),
                                             Container(
-                                              height: 38,
-                                              width: 89,
+                                              padding: const EdgeInsets.symmetric(vertical: 6, horizontal: 10),
                                               decoration: BoxDecoration(
                                                 color: shoeModelTwoList[index].color1,
                                                 border: Border.all(
