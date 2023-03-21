@@ -396,8 +396,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
                     child: Padding(
                       padding: const EdgeInsets.only(right: 10),
                       child: Container(
-                        width: 275,
-                        padding: const EdgeInsets.only(right: 40, top: 20),
+                        width: 260,
                         decoration: BoxDecoration(
                           border: Border.all(
                             width: 1,
@@ -427,7 +426,15 @@ class _ShoesScreenState extends State<ShoesScreen> {
                               )
                             : Column(
                                 children: [
-                                  const Align(alignment: Alignment.centerRight, child: Icon(Icons.more_vert, size: 25, color: Colors.white)),
+                                  Padding(
+                                    padding: const EdgeInsets.only(right: 40, top: 20),
+                                    child: Row(
+                                      mainAxisAlignment: MainAxisAlignment.end,
+                                      children: const [
+                                        Align(alignment: Alignment.centerRight, child: Icon(Icons.more_vert, size: 25, color: Colors.white)),
+                                      ],
+                                    ),
+                                  ),
                                   Image.asset(shoeModelTwoList[index].image!, height: 180),
                                   Padding(
                                     padding: const EdgeInsets.all(10),
