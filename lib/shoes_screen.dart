@@ -11,11 +11,6 @@ class ShoesScreen extends StatefulWidget {
 }
 
 class _ShoesScreenState extends State<ShoesScreen> {
-  bool home = false;
-  bool search = false;
-  bool bag = false;
-  bool person = false;
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(

@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:screens_app/shop_screen.dart';
+import 'package:flutter/services.dart';
+import 'package:screens_app/shoes_screen.dart';
 
 void main() {
   runApp(const MyApp());
+  SystemChrome.setPreferredOrientations([DeviceOrientation.portraitUp, DeviceOrientation.portraitDown]);
 }
 
 class MyApp extends StatelessWidget {
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: const ShopScreen(),
+      home: const ShoesScreen(),
     );
   }
 }

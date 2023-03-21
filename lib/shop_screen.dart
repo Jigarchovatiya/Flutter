@@ -9,7 +9,6 @@ class ShopScreen extends StatefulWidget {
 
 class _ShopScreenState extends State<ShopScreen> {
   bool favorite = false;
-
   List<bool> like = [
     false,
     false,
@@ -90,7 +89,7 @@ class _ShopScreenState extends State<ShopScreen> {
                       },
                       child: Icon(
                         favorite == true ? Icons.favorite : Icons.favorite_border,
-                        color: favorite == true ? const Color(0xffF87265) : const Color(0xff9B0000),
+                        color: favorite == true ? const Color(0xff9B0000) : const Color(0xff9B0000),
                         size: 23,
                       ),
                     ),
@@ -175,7 +174,7 @@ class _ShopScreenState extends State<ShopScreen> {
                                             },
                                             child: Icon(
                                               like[index] == true ? Icons.favorite : Icons.favorite_border,
-                                              color: like[index] == true ? const Color(0xffF87265) : const Color(0xff9B0000),
+                                              color: like[index] == true ? const Color(0xff9B0000) : const Color(0xff9B0000),
                                               size: 23,
                                             ),
                                           ),
