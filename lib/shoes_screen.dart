@@ -125,7 +125,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
                 alignment: Alignment.center,
                 child: Image.asset(
                   "assets/shoes_screen/text.png",
-                  width: 320,
+                  height: 100,
                 ),
               ),
               const SizedBox(height: 30),
@@ -159,7 +159,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
                 padding: const EdgeInsets.symmetric(horizontal: 20),
                 child: Image.asset(
                   "assets/shoes_screen/shoes1.png",
-                  width: 360,
+                  height: 260,
                 ),
               ),
               const SizedBox(height: 30),
@@ -177,8 +177,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
               ),
               const SizedBox(height: 30),
               Container(
-                height: 54,
-                width: 195,
+                padding: const EdgeInsets.symmetric(horizontal: 55, vertical: 15),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(200),
                   border: Border.all(
@@ -186,22 +185,20 @@ class _ShoesScreenState extends State<ShoesScreen> {
                     width: 1,
                   ),
                 ),
-                child: const Center(
-                  child: Text(
-                    "Add to bag",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 20,
-                      fontFamily: "SofiaSans",
-                      color: Color(0xFF02C0FC),
-                    ),
+                child: const Text(
+                  textAlign: TextAlign.center,
+                  "Add to bag",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 20,
+                    fontFamily: "SofiaSans",
+                    color: Color(0xFF02C0FC),
                   ),
                 ),
               ),
               const SizedBox(height: 20),
               Container(
-                height: 54,
-                width: 195,
+                padding: const EdgeInsets.symmetric(horizontal: 65, vertical: 15),
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(200),
                   border: Border.all(
@@ -209,15 +206,14 @@ class _ShoesScreenState extends State<ShoesScreen> {
                     width: 1,
                   ),
                 ),
-                child: const Center(
-                  child: Text(
-                    "Favorite",
-                    style: TextStyle(
-                      fontWeight: FontWeight.w400,
-                      fontSize: 20,
-                      fontFamily: "SofiaSans",
-                      color: Color(0xFFCCCCCC),
-                    ),
+                child: const Text(
+                  textAlign: TextAlign.center,
+                  "Favorite",
+                  style: TextStyle(
+                    fontWeight: FontWeight.w400,
+                    fontSize: 20,
+                    fontFamily: "SofiaSans",
+                    color: Color(0xFFCCCCCC),
                   ),
                 ),
               ),
@@ -270,8 +266,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Container(
-                  height: 60,
-                  width: 360,
+                  padding: const EdgeInsets.symmetric(horizontal: 5, vertical: 15),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(
@@ -304,8 +299,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
               Padding(
                 padding: const EdgeInsets.all(20),
                 child: Container(
-                  height: 60,
-                  width: 360,
+                  padding: const EdgeInsets.symmetric(vertical: 15, horizontal: 10),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10),
                     border: Border.all(
@@ -340,8 +334,7 @@ class _ShoesScreenState extends State<ShoesScreen> {
                 alignment: Alignment.center,
                 child: Image.asset(
                   "assets/shoes_screen/explore.png",
-                  width: 270,
-                  height: 43,
+                  height: 40,
                 ),
               ),
               const SizedBox(height: 10),
@@ -380,142 +373,29 @@ class _ShoesScreenState extends State<ShoesScreen> {
                 ),
               ),
               const SizedBox(height: 30),
-              Image.asset("assets/shoes_screen/boy1.png", width: 358),
+              Image.asset("assets/shoes_screen/boy1.png", height: 240),
               const SizedBox(height: 30),
-              Image.asset("assets/shoes_screen/boy2.png", width: 358),
+              Image.asset("assets/shoes_screen/boy2.png", height: 265),
               const SizedBox(height: 30),
-              Image.asset("assets/shoes_screen/boy3.png", width: 358),
+              Image.asset("assets/shoes_screen/boy3.png", height: 220),
               const SizedBox(height: 30),
-              Image.asset("assets/shoes_screen/text2.png", height: 86, width: 358),
+              Image.asset(
+                "assets/shoes_screen/text2.png",
+                height: 90,
+              ),
               const SizedBox(height: 30),
               SizedBox(
                 height: 388,
-                child: ListView(
+                child: ListView.builder(
                   scrollDirection: Axis.horizontal,
+                  itemCount: shoeModelTwoList.length,
+                  shrinkWrap: true,
                   physics: const BouncingScrollPhysics(),
-                  children: [
-                    ListView.builder(
-                      scrollDirection: Axis.horizontal,
-                      itemCount: shoeModelTwoList.length,
-                      shrinkWrap: true,
-                      physics: const NeverScrollableScrollPhysics(),
-                      itemBuilder: (context, index) => Padding(
-                        padding: const EdgeInsets.only(left: 20),
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 10),
-                          child: Container(
-                            height: 387,
-                            width: 274,
-                            decoration: BoxDecoration(
-                              border: Border.all(
-                                width: 1,
-                                color: Colors.white,
-                              ),
-                              borderRadius: BorderRadius.circular(20),
-                            ),
-                            child: Column(
-                              children: [
-                                Image.asset(shoeModelTwoList[index].image, width: 224),
-                                Padding(
-                                  padding: const EdgeInsets.all(10),
-                                  child: Column(
-                                    crossAxisAlignment: CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        shoeModelTwoList[index].text,
-                                        style: const TextStyle(
-                                          fontFamily: "SofiaSans",
-                                          fontSize: 24,
-                                          fontWeight: FontWeight.w700,
-                                          color: Color(0xFFFFFFFF),
-                                        ),
-                                      ),
-                                      const SizedBox(height: 20),
-                                      Row(
-                                        children: [
-                                          Container(
-                                            height: 38,
-                                            width: 62,
-                                            decoration: BoxDecoration(
-                                              color: const Color(0x1ACCCCCC),
-                                              border: Border.all(
-                                                width: 1,
-                                                color: const Color(0xFFCCCCCC),
-                                              ),
-                                              borderRadius: BorderRadius.circular(20),
-                                            ),
-                                            child: Center(
-                                              child: Text(
-                                                shoeModelTwoList[index].text2,
-                                                style: const TextStyle(
-                                                  fontFamily: "SofiaSans",
-                                                  fontSize: 20,
-                                                  fontWeight: FontWeight.w700,
-                                                  color: Color(0xFFCCCCCC),
-                                                ),
-                                              ),
-                                            ),
-                                          ),
-                                          const SizedBox(width: 10),
-                                          Container(
-                                            height: 38,
-                                            width: 89,
-                                            decoration: BoxDecoration(
-                                              color: shoeModelTwoList[index].color1,
-                                              border: Border.all(
-                                                width: 1,
-                                                color: shoeModelTwoList[index].color,
-                                              ),
-                                              borderRadius: BorderRadius.circular(20),
-                                            ),
-                                            child: Align(
-                                              alignment: Alignment.center,
-                                              child: Row(
-                                                children: [
-                                                  const SizedBox(width: 10),
-                                                  Text(
-                                                    shoeModelTwoList[index].text3,
-                                                    style: TextStyle(
-                                                      fontFamily: "SofiaSans",
-                                                      fontSize: 20,
-                                                      fontWeight: FontWeight.w400,
-                                                      color: shoeModelTwoList[index].color,
-                                                    ),
-                                                  ),
-                                                  const SizedBox(width: 5),
-                                                  Image.asset(
-                                                    shoeModelTwoList[index].image2,
-                                                    width: 20,
-                                                  ),
-                                                ],
-                                              ),
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                      const SizedBox(height: 20),
-                                      Text(
-                                        shoeModelTwoList[index].text4,
-                                        style: const TextStyle(
-                                          fontFamily: "SofiaSans",
-                                          fontSize: 20,
-                                          fontWeight: FontWeight.w400,
-                                          color: Color(0xFFFFFFFF),
-                                        ),
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.symmetric(horizontal: 20),
+                  itemBuilder: (context, index) => Padding(
+                    padding: const EdgeInsets.only(left: 20),
+                    child: Padding(
+                      padding: const EdgeInsets.only(right: 10),
                       child: Container(
-                        height: 387,
                         width: 274,
                         decoration: BoxDecoration(
                           border: Border.all(
@@ -524,28 +404,124 @@ class _ShoesScreenState extends State<ShoesScreen> {
                           ),
                           borderRadius: BorderRadius.circular(20),
                         ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: const [
-                            Icon(
-                              Icons.search,
-                              size: 64,
-                              color: Color(0xFFFFFFFF),
-                            ),
-                            Text(
-                              "Explore More",
-                              style: TextStyle(
-                                fontFamily: "SofiaSans",
-                                fontSize: 24,
-                                fontWeight: FontWeight.w700,
-                                color: Color(0xFFFFFFFF),
+                        child: shoeModelTwoList[index].text == null
+                            ? Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: const [
+                                  Icon(
+                                    Icons.search,
+                                    size: 64,
+                                    color: Color(0xFFFFFFFF),
+                                  ),
+                                  Text(
+                                    "Explore More",
+                                    style: TextStyle(
+                                      fontFamily: "SofiaSans",
+                                      fontSize: 24,
+                                      fontWeight: FontWeight.w700,
+                                      color: Color(0xFFFFFFFF),
+                                    ),
+                                  ),
+                                ],
+                              )
+                            : Column(
+                                children: [
+                                  Image.asset(shoeModelTwoList[index].image!, width: 224),
+                                  Padding(
+                                    padding: const EdgeInsets.all(10),
+                                    child: Column(
+                                      crossAxisAlignment: CrossAxisAlignment.start,
+                                      children: [
+                                        Text(
+                                          shoeModelTwoList[index].text!,
+                                          style: const TextStyle(
+                                            fontFamily: "SofiaSans",
+                                            fontSize: 24,
+                                            fontWeight: FontWeight.w700,
+                                            color: Color(0xFFFFFFFF),
+                                          ),
+                                        ),
+                                        const SizedBox(height: 20),
+                                        Row(
+                                          children: [
+                                            Container(
+                                              height: 38,
+                                              width: 62,
+                                              decoration: BoxDecoration(
+                                                color: const Color(0x1ACCCCCC),
+                                                border: Border.all(
+                                                  width: 1,
+                                                  color: const Color(0xFFCCCCCC),
+                                                ),
+                                                borderRadius: BorderRadius.circular(20),
+                                              ),
+                                              child: Center(
+                                                child: Text(
+                                                  shoeModelTwoList[index].text2!,
+                                                  style: const TextStyle(
+                                                    fontFamily: "SofiaSans",
+                                                    fontSize: 20,
+                                                    fontWeight: FontWeight.w700,
+                                                    color: Color(0xFFCCCCCC),
+                                                  ),
+                                                ),
+                                              ),
+                                            ),
+                                            const SizedBox(width: 10),
+                                            Container(
+                                              height: 38,
+                                              width: 89,
+                                              decoration: BoxDecoration(
+                                                color: shoeModelTwoList[index].color1,
+                                                border: Border.all(
+                                                  width: 1,
+                                                  color: shoeModelTwoList[index].color!,
+                                                ),
+                                                borderRadius: BorderRadius.circular(20),
+                                              ),
+                                              child: Align(
+                                                alignment: Alignment.center,
+                                                child: Row(
+                                                  children: [
+                                                    const SizedBox(width: 10),
+                                                    Text(
+                                                      shoeModelTwoList[index].text3!,
+                                                      style: TextStyle(
+                                                        fontFamily: "SofiaSans",
+                                                        fontSize: 20,
+                                                        fontWeight: FontWeight.w400,
+                                                        color: shoeModelTwoList[index].color,
+                                                      ),
+                                                    ),
+                                                    const SizedBox(width: 5),
+                                                    Image.asset(
+                                                      shoeModelTwoList[index].image2!,
+                                                      width: 20,
+                                                    ),
+                                                  ],
+                                                ),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
+                                        const SizedBox(height: 20),
+                                        Text(
+                                          shoeModelTwoList[index].text4!,
+                                          style: const TextStyle(
+                                            fontFamily: "SofiaSans",
+                                            fontSize: 20,
+                                            fontWeight: FontWeight.w400,
+                                            color: Color(0xFFFFFFFF),
+                                          ),
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                ],
                               ),
-                            ),
-                          ],
-                        ),
                       ),
                     ),
-                  ],
+                  ),
                 ),
               ),
               const SizedBox(height: 30),
