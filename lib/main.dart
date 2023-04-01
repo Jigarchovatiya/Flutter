@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:screens_app/shoes_screen.dart';
+import 'package:screens_app/screen_eight.dart';
 
 void main() {
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
       ),
-      home: const ShoesScreen(),
+      home: const ScreenEight(),
     );
   }
 }

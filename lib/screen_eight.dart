@@ -240,7 +240,6 @@ class _ScreenEightState extends State<ScreenEight> {
                                             //   ),
                                             // ],
                                             border: Border.all(
-                                              strokeAlign: StrokeAlign.center,
                                               width: 1,
                                               color: const Color(0x80E2DFDF),
                                             ),
@@ -382,7 +381,6 @@ class _ScreenEightState extends State<ScreenEight> {
                                             //   ),
                                             // ],
                                             border: Border.all(
-                                              strokeAlign: StrokeAlign.center,
                                               width: 1,
                                               color: const Color(0x80E2DFDF),
                                             ),
@@ -581,7 +579,6 @@ class _ScreenEightState extends State<ScreenEight> {
                                               bottomRight: Radius.circular(5),
                                             ),
                                             border: Border.all(
-                                              strokeAlign: StrokeAlign.center,
                                               width: 1,
                                               color: const Color(0x80E2DFDF),
                                             ),
@@ -696,7 +693,6 @@ class _ScreenEightState extends State<ScreenEight> {
                                               bottomRight: Radius.circular(5),
                                             ),
                                             border: Border.all(
-                                              strokeAlign: StrokeAlign.center,
                                               width: 1,
                                               color: const Color(0x80E2DFDF),
                                             ),
