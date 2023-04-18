@@ -352,7 +352,7 @@ class _FigmaScreenFiveState extends State<FigmaScreenFive> {
                 ),
               ),
               const SizedBox(height: 20),
-              Container(
+              SizedBox(
                 width: double.infinity,
                 height: 50,
                 child: ListView(

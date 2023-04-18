@@ -11,3 +11,4 @@ List<ShoeTwoModal> gajiModelList = [
   ShoeTwoModal(text2: " \$ 140", text: "\$ 170", text3: "\$ 30"),
   ShoeTwoModal(text2: " \$ 153", text: "\$ 170", text3: "10%"),
 ];
+

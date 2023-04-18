@@ -123,14 +123,14 @@ class _FigmaScreenThreeState extends State<FigmaScreenThree> {
                 ),
                 Padding(
                   padding: const EdgeInsets.all(10),
-                  child: Container(
+                  child: SizedBox(
                     height: 35,
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                       children: [
-                        Container(
+                        const SizedBox(
                           height: 20,
-                          child: const Text(
+                          child: Text(
                             "May",
                             style: TextStyle(
                               // fontWeight: FontWeight.w400,
@@ -139,9 +139,9 @@ class _FigmaScreenThreeState extends State<FigmaScreenThree> {
                             ),
                           ),
                         ),
-                        Container(
+                        const SizedBox(
                           height: 20,
-                          child: const Text(
+                          child: Text(
                             "jun",
                             style: TextStyle(
                               color: Color(0xFF909090),
@@ -165,18 +165,18 @@ class _FigmaScreenThreeState extends State<FigmaScreenThree> {
                             textAlign: TextAlign.center,
                           ),
                         ),
-                        Container(
+                        const SizedBox(
                           height: 20,
-                          child: const Text(
+                          child: Text(
                             "Aug",
                             style: TextStyle(
                               color: Color(0xFF909090),
                             ),
                           ),
                         ),
-                        Container(
+                        const SizedBox(
                           height: 20,
-                          child: const Text(
+                          child: Text(
                             "sep",
                             style: TextStyle(
                               color: Color(0xFF909090),
@@ -459,7 +459,7 @@ class _FigmaScreenThreeState extends State<FigmaScreenThree> {
             ),
           ),
         ),
-        bottomNavigationBar: Container(
+        bottomNavigationBar: SizedBox(
           height: 80,
           child: Padding(
             padding: const EdgeInsets.all(10),
